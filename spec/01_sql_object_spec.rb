@@ -1,4 +1,4 @@
-require 'active_record_lite/01_sql_object'
+require 'ruby-models/01_sql_object'
 require 'securerandom'
 
 describe SQLObject do

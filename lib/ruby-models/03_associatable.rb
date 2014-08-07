@@ -68,7 +68,6 @@ module Associatable
   def has_many(name, options = {})
     assoc = HasManyOptions.new(name,self.class.to_s.to_sym, options)
     define_method(name) do
-      debugger
       model = assoc.model_class
       primary_key = send(assoc.primary_key)
       # primary_key = assoc.send(:primary_key)

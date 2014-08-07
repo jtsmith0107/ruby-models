@@ -84,7 +84,6 @@ class SQLObject
     VALUES
     (#{question_marks})
     SQL
-    puts "calling last insert row id"
     @attributes[:id] = DBConnection.last_insert_row_id
   end
 
